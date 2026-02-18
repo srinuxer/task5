@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LASYA SUDHA TOYA WORLD</title>
+    <link rel="stylesheet" href="task5.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">LSTW</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for toys , photoframes , scenery designs..." id="searchInput">
+                <button class="search-btn" id="searchBtn">🔍</button>
+            </div>
+            <div class="user-actions">
+                <button class="cart-btn" id="cartBtn">
+                    🛒 Cart
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="account-btn">👤 Account</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>SOFTRONICS</h1>
+                <p>ONE STOP TOYS SHOP</p>
+                <button class="cta-btn" id="ctaBtn">Shop Now</button>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">Shop by Category</h2>
+                <div class="category-grid">
+                    <div class="category-card" data-category="smartphones">
+                        <div class="category-icon">📱</div>
+                        <h3>Smartphones</h3>
+                        <p>Latest flagship phones</p>
+                    </div>
+                    <div class="category-card" data-category="laptops">
+                        <div class="category-icon">💻</div>
+                        <h3>Laptops</h3>
+                        <p>High-performance computing</p>
+                    </div>
+                    <div class="category-card" data-category="audio">
+                        <div class="category-icon">🎧</div>
+                        <h3>Audio</h3>
+                        <p>Premium sound experience</p>
+                    </div>
+                    <div class="category-card" data-category="gaming">
+                        <div class="category-icon">🎮</div>
+                        <h3>Gaming</h3>
+                        <p>Ultimate gaming gear</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="products">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="product-grid" id="productGrid"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" id="closeCartBtn">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p style="text-align: center; color: #999; padding: 2rem;">Your cart is empty</p>
+        </div>
+        <div class="cart-total">
+            <div class="total-amount">Total: $<span id="totalAmount">0.00</span></div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>About TechVault</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Social Media</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVault. All rights reserved. | Premium Softtoys Marketplace</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="task5.js"></script>
+</body>
+</html>
